@@ -4,13 +4,45 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">	
 <style>
+
+.content {
+  position: static;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}	
+	
+#myVideo {
+  position: static;
+  right: 0;
+	padding-top: 50px;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}	
+	
+#grad1 {
+  height: 200px;
+  background-color: lightblue; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom, white, lightblue); /* Standard syntax (must be last) */
+}
+	
+#grad2 {
+  height: 500px;
+  background-color: white; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom, lightblue, pink); /* Standard syntax (must be last) */
+}	
+	
 .parallax {
   /* The image used */
-  background-image: url("img/Wallpaper.png");
+  background-image: url("img/Deluxe (Xi).png");
 
   /* Set a specific height */
-  min-height: 600px; 
+  min-height: 1200px; 
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -23,8 +55,8 @@
 <link href="css/bootstrap-4.3.1.css" rel="stylesheet" type="text/css">
 </head>
 
-<body style="padding-top: 70px">
-<img src="img/Deluxe (Xi).png" class="img-fluid" alt="Sorry Still Being Worked On">
+<body style="padding-bottom: 100px">
+<div>
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="#">Navbar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent1">
@@ -48,21 +80,186 @@
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap-4.3.1.js"></script>
-	
-<p>Welcome To The Future</p>
-
-<div class="parallax"></div>
-
-<div style="height:1000px;background-color:white;font-size:36px">
-If you are reading this that means this website works.
-	
-	
-	
-	
-	
-	
-Hell Yeah!
 </div>
+	
+<div class=parallax>	</div>
+
+
+	<div style="text-align: center;background-color:white;font-size: 250%;"><h1> The Future Is Deluxe </h1></div>
+	<p>Here at Deluxe we specialise in software</p>
+		
+	<div id="grad1">	</div>	
+	
+	<div style="text-align: center;background-color:lightblue;font-size: 250%;padding-bottom: 20px"><h1> Viewing Images Hasn't Been Any Easier </h1></div>
+<div class="container-fluid" style="background-color: lightblue;padding-top: 20px">	
+	<div class="row">
+	  <div class="col-xl-6">
+		
+		<div class="jumbotron">
+		  <h1 class="display-4">Ambient View</h1>
+		  <p class="lead">A simple and sleek image viewer. Allowing you to view images from your hard drive or an image online and save it to onto your computer.</p>
+		  <hr class="my-4">
+		  <p>You can download the software and source code for free down below. (Still In Beta)</p>
+		  <div class="row">
+		    <div class="col-xl-6"><p class="lead"> <a class="btn btn-primary btn-lg" href="#" role="button">Download For Windows</a> </p></div>
+		    <div class="col-xl-6"><p class="lead"> <a class="btn btn-primary btn-lg" href="#" role="button">Download Source Code</a> </p></div>
+	      </div>
+        </div>
+      </div>
+	  <div class="col-xl-6">
+		  
+		  
+		  <div class="w3-content" style="width: 70%">
+
+  <img class="mySlides" src="Life.png" style="width:100%;display:none">
+  <img class="mySlides" src="Gameboy.png" style="width:100%">
+  <img class="mySlides" src="But Only One.png" style="width:100%;display:none">
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col s4">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="Life.png" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+    </div>
+    <div class="w3-col s4">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="Gameboy.png" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+    </div>
+    <div class="w3-col s4">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="But Only One.png" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
+    </div>
+  </div>
+</div>
+
+	
+<script>
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
+	
+
+</script>
+	  </div>
+  </div>
+</div>
+	
+<div id="grad2">	
+	
+</div>
+
+<div class="container-fluid" style="background-color: pink;padding-top: 20px">	
+	<div class="row">
+	  <div class="col-xl-6">
+				  
+		  <div class="w3-content" style="width: 70%">
+
+  <img class="mySlides" src="Life.png" style="width:100%;display:none">
+  <img class="mySlides" src="Gameboy.png" style="width:100%">
+  <img class="mySlides" src="But Only One.png" style="width:100%;display:none">
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col s4">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="Life.png" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+    </div>
+    <div class="w3-col s4">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="Gameboy.png" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+    </div>
+    <div class="w3-col s4">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="But Only One.png" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
+    </div>
+  </div>
+</div>
+
+	
+<script>
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
+	
+
+</script>
+		  
+		  
+		
+		</div>
+	  <div class="col-xl-6">
+	    <div class="col-xl-12">
+		
+		<div class="jumbotron">
+		  <h1 class="display-4">Retro Browser</h1>
+		  <p class="lead">View your favourite websites in the retro throwback of a web browser</p>
+		  <hr class="my-4">
+		  <p>You can download the software and source code for free down below. (This is very unstable and doesn't support websites with javascript as of now)</p>
+		  <div class="row">
+		    <div class="col-xl-6"><p class="lead"> <a class="btn btn-primary btn-lg" href="AmbientView - Application.zip" role="button">Download For Windows</a> </p></div>
+		    <div class="col-xl-6"><p class="lead"> <a class="btn btn-primary btn-lg" href="#" role="button">Download Source Code</a> </p></div>
+	      </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+	
+<script>
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
+	
+
+</script>
+	  </div>
+  </div>
+</div>
+
+	
+
+
 </body>
 	
 	
