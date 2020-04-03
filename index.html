@@ -37,6 +37,13 @@
   background-image: linear-gradient(to bottom, lightblue, pink); /* Standard syntax (must be last) */
 }	
 	
+#grad3 {
+  height: 500px;
+  background-color: white; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom, pink, white); /* Standard syntax (must be last) */
+}		
+	
+	
 .parallax {
   /* The image used */
   background-image: url("img/Deluxe (Xi).png");
@@ -101,8 +108,8 @@
 		  <hr class="my-4">
 		  <p>You can download the software and source code for free down below. (Still In Beta)</p>
 		  <div class="row">
-		    <div class="col-xl-6"><p class="lead"> <a class="btn btn-primary btn-lg" href="#" role="button">Download For Windows</a> </p></div>
-		    <div class="col-xl-6"><p class="lead"> <a class="btn btn-primary btn-lg" href="#" role="button">Download Source Code</a> </p></div>
+		    <div class="col-xl-6"><p class="lead"> <a class="btn btn-primary btn-lg" href="AmbientView - Application.zip" role="button" download>Download For Windows</a> </p></div>
+		    <div class="col-xl-6"><p class="lead"> <a class="btn btn-primary btn-lg" href="AmbinetView - Source.zip" role="button" download>Download Source Code</a> </p></div>
 	      </div>
         </div>
       </div>
@@ -157,42 +164,42 @@ function showDivs(n) {
 </div>
 	
 <div id="grad2">	
-	
-</div>
 
+</div>
+<div style="text-align: center;background-color:pink;font-size: 250%;padding-bottom: 20px"><h1> Explore Modern Webpages, In A Retro Browser </h1></div>	
 <div class="container-fluid" style="background-color: pink;padding-top: 20px">	
 	<div class="row">
 	  <div class="col-xl-6">
 				  
 		  <div class="w3-content" style="width: 70%">
 
-  <img class="mySlides" src="Life.png" style="width:100%;display:none">
-  <img class="mySlides" src="Gameboy.png" style="width:100%">
-  <img class="mySlides" src="But Only One.png" style="width:100%;display:none">
+  <img class="mySlidess" src="images/Capture.PNG" style="width:100%;display:none">
+  <img class="mySlidess" src="images/Captaure.PNG" style="width:100%">
+  <img class="mySlidess" src="images/Captdsure.PNG" style="width:100%;display:none">
 
   <div class="w3-row-padding w3-section">
     <div class="w3-col s4">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="Life.png" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+      <img class="demoo w3-opacity w3-hover-opacity-off" src="images/Capture.PNG" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
     </div>
     <div class="w3-col s4">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="Gameboy.png" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+      <img class="demoo w3-opacity w3-hover-opacity-off" src="images/Captaure.PNG" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
     </div>
     <div class="w3-col s4">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="But Only One.png" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
+      <img class="demoo w3-opacity w3-hover-opacity-off" src="images/Captdsure.PNG" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
     </div>
   </div>
 </div>
 
 	
 <script>
-function currentDiv(n) {
-  showDivs(slideIndex = n);
+function currentDivs(n) {
+  showDivss(slideIndex = n);
 }
 
-function showDivs(n) {
+function showDivss(n) {
   var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
+  var x = document.getElementsByClassName("mySlidess");
+  var dots = document.getElementsByClassName("demoo");
   if (n > x.length) {slideIndex = 1}
   if (n < 1) {slideIndex = x.length}
   for (i = 0; i < x.length; i++) {
@@ -220,7 +227,7 @@ function showDivs(n) {
 		  <hr class="my-4">
 		  <p>You can download the software and source code for free down below. (This is very unstable and doesn't support websites with javascript as of now)</p>
 		  <div class="row">
-		    <div class="col-xl-6"><p class="lead"> <a class="btn btn-primary btn-lg" href="AmbientView - Application.zip" role="button">Download For Windows</a> </p></div>
+		    <div class="col-xl-6"><p class="lead"> <a class="btn btn-primary btn-lg" href="#" role="button">Download For Windows</a> </p></div>
 		    <div class="col-xl-6"><p class="lead"> <a class="btn btn-primary btn-lg" href="#" role="button">Download Source Code</a> </p></div>
 	      </div>
         </div>
@@ -231,14 +238,14 @@ function showDivs(n) {
 
 	
 <script>
-function currentDiv(n) {
-  showDivs(slideIndex = n);
+function currentDivs(n) {
+  showDivss(slideIndex = n);
 }
 
-function showDivs(n) {
+function showDivss(n) {
   var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
+  var x = document.getElementsByClassName("mySlidess");
+  var dots = document.getElementsByClassName("demoo");
   if (n > x.length) {slideIndex = 1}
   if (n < 1) {slideIndex = x.length}
   for (i = 0; i < x.length; i++) {
@@ -257,7 +264,7 @@ function showDivs(n) {
   </div>
 </div>
 
-	
+<div id="grad3">	</div>
 
 
 </body>
