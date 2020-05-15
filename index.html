@@ -17,7 +17,9 @@
 		<script>
 function myFunction() {
   var x = document.URL;
-	var res = x.replace("%20", " ");
+  var res = x.replace(/%20/g, " ");
+
+	
   
 	
   document.getElementById("demo").innerHTML = res.substr(34) ;
