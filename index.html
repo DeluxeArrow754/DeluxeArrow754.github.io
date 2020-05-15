@@ -18,12 +18,12 @@
 function myFunction() {
   var x = document.URL;
   var res = x.replace(/%20/g, " ");
-  var res = x.replace(/%27/g, "'");
+  var final = x.replace(/%27/g, "'");
 
 	
   
 	
-  document.getElementById("demo").innerHTML = res.substr(34) ;
+  document.getElementById("demo").innerHTML = final.substr(34) ;
 }
 </script>
 </div>
