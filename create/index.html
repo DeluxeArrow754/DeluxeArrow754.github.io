@@ -11,7 +11,7 @@
     function setChartImage() {
 	var query = { cht: "qr", choe: "UTF-8", 
 		      chs: "300x300", chld: $(":radio[name='ec']:checked").val(),
-		      chl: "https://deluxearrow754.github.io/create?" + $("#text").val() };
+		      chl: "https://deluxearrow754.github.io/reader?" + $("#text").val() };
 	var url = "http://chart.apis.google.com/chart?" + $.param(query);
 	
 	$("#chart").attr('src', url);
