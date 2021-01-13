@@ -2,13 +2,30 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/background.css">
 <title>DELUXE</title>
 <style>
 .container {
   position: relative;
   width: 50%;
 }
+.container2 { 
+  height: 200px;
+  position: relative;
+  border: 3px solid green; 
+}
 
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}	
+.p2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
 .image {
   display: block;
   width: 100%;
@@ -118,10 +135,33 @@
 </style>
 </head>
 <body>
-<h2>Dungeon Conundrum (Sorry For The Horrible Website)</h2>
-<p>This is a simple puzzle game where you swipe to move a character to open all chests and to break all the falling tiles and reach the ladder to the end</p>
-<h1>When installing for Android download the APK and use an APK installer software or File Browser (You may need to go to Settings/Security and Enable install from Unknown Sources)</h1>
-<a href=""><button class="button"><span>N/A</span></button></a>
-<a href="Src/DungeonConundrum.apk"><button class="buttonSource"><span>Download For Android</span></button></a>
+	
+ <div class="context">
+        <h1 class="p2">Dungeon Conundrum</h1>
+	    <h2 class="p2">Click Screen To Download</h2>
+	    <h3 class="p2" style="padding-top: 50px">|| Version 0.32 ||</h3>
+	    <h3 class="p2" style="padding-top: 10px">Redesigned Every Level To Be More Easy</h3>
+	    <h3 class="p2" style="padding-top: 10px">Created 2 New Blizzard Levels (14 Levels Total)</h3>
+	    <h3 class="p2" style="padding-top: 10px">Bats Now Move Every Second</h3>
+	    <h3 class="p2" style="padding-top: 10px">Disabled V-Sync Game Also Displays FPS</h3>
+    </div>
+
+<a href="src/DungeonConundrum.apk">
+<div class="area">
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+    </div >
+</a>	
+
 </body>
 </html>
